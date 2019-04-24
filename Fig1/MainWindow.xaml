@@ -1,0 +1,46 @@
+﻿<Window x:Class="Fig1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fig1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Label Content="ID:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Height="23" Margin="10,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Paciente" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtPaciente" HorizontalAlignment="Left" Height="23" Margin="10,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="552"/>
+        <Label Content="Espécie" HorizontalAlignment="Left" Margin="636,69,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEspecie" HorizontalAlignment="Left" Height="23" Margin="636,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="118"/>
+        <Label Content="Sexo" HorizontalAlignment="Left" Margin="208,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSexo" HorizontalAlignment="Left" Height="23" Margin="208,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Raça" HorizontalAlignment="Left" Margin="8,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRaca" HorizontalAlignment="Left" Height="23" Margin="8,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Nome do tutor:" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNomeTutor" HorizontalAlignment="Left" Height="23" Margin="10,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="744"/>
+        <Label Content="e-mail do tutor:" HorizontalAlignment="Left" Margin="10,238,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmailTutor" HorizontalAlignment="Left" Height="23" Margin="10,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350"/>
+        <Label Content="Nome do veterinário:" HorizontalAlignment="Left" Margin="10,288,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNomeVet" HorizontalAlignment="Left" Height="23" Margin="10,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="744"/>
+        <Label Content="e-mail do veterinário" HorizontalAlignment="Left" Margin="10,338,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmailvet" HorizontalAlignment="Left" Height="23" Margin="10,364,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350"/>
+        <Label Content="Telefone do tutor:" HorizontalAlignment="Left" Margin="404,238,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelTutor" HorizontalAlignment="Left" Height="23" Margin="404,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350"/>
+        <Label Content="Telefone do veterinário:" HorizontalAlignment="Left" Margin="404,340,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtTelVet" HorizontalAlignment="Left" Height="23" Margin="404,366,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350"/>
+        <DatePicker HorizontalAlignment="Left" Margin="616,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Data" HorizontalAlignment="Left" Margin="616,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Idade" HorizontalAlignment="Left" Margin="442,118,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtIdade" HorizontalAlignment="Left" Height="23" Margin="442,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btInserir" Content="Inserir" HorizontalAlignment="Left" Margin="280,401,0,0" VerticalAlignment="Top" Width="75" Click="BtInserir_Click"/>
+        <Button x:Name="btAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="360,401,0,0" VerticalAlignment="Top" Width="75" Click="BtAlterar_Click"/>
+        <Button x:Name="btLocalizar" Content="Localizar" HorizontalAlignment="Left" Margin="440,401,0,0" VerticalAlignment="Top" Width="75" Click="BtLocalizar_Click"/>
+        <Button x:Name="btExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="520,401,0,0" VerticalAlignment="Top" Width="75" Click="BtExcluir_Click"/>
+        <Button x:Name="btSalvar" Content="Salvar" HorizontalAlignment="Left" Margin="600,401,0,0" VerticalAlignment="Top" Width="75" Click="BtSalvar_Click"/>
+        <Button x:Name="btCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="680,401,0,0" VerticalAlignment="Top" Width="75" Click="BtCancelar_Click"/>
+        <Label x:Name="lbQtdPacientes" Content="Pacientes :" HorizontalAlignment="Left" Margin="10,403,0,0" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgGrid" AutoGenerateColumns="True" IsReadOnly="True" HorizontalAlignment="Left" Height="133" Margin="8,426,0,0" VerticalAlignment="Top" Width="772" MouseDoubleClick="DgGrid_MouseDoubleClick" SelectionMode="Single"/>
+
+    </Grid>
+</Window>
